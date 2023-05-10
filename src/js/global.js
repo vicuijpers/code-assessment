@@ -264,3 +264,17 @@ Shopify.CountryProvinceSelector.prototype = {
     }
   }
 };
+
+
+//Assessment vic
+
+if(window.outerWidth < 768) {
+  let buttons = document.querySelectorAll('.footer-block--menu__link.level-1');
+  if(buttons.length) {
+    buttons.forEach(button=>{
+      button.onclick = function(){
+        this.nextElementSibling.classList.toggle('show');
+      };
+    })
+  }
+}

@@ -317,3 +317,15 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .footer-block--menu__item {
+    .footer-block--menu__list.level-2 {
+      display: none;
+      &.show {
+        display: block;
+      }
+    }
+  }
+}
