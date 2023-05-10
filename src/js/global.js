@@ -278,3 +278,14 @@ if(window.outerWidth < 768) {
     })
   }
 }
+
+let indicators = document.querySelectorAll('.swiper-scroll-indicators');
+let section = document.querySelectorAll('main > section')[1];
+if(indicators.length && section) {
+  indicators.forEach(indicator=>{
+    indicator.onclick = function(){
+      console.log(section);
+      section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    };
+  })
+}
