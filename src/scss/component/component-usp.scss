@@ -67,3 +67,15 @@
     }
   }
 }
+
+
+
+
+// I would break this on a smaller breakpoint
+@media (max-width: 768px) {
+  .usp {
+    .is-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
